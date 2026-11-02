@@ -3,21 +3,21 @@
 Statički sajt (HTML + CSS + JS, bez build koraka). Spreman za GitHub Pages.
 
 ## Objavljivanje na GitHub Pages
-1. Napravite novi repozitorijum na GitHub-u i ubacite sav sadržaj ovog foldera (`index.html` mora biti u korenu).
-2. **Settings → Pages → Source: Deploy from a branch**, izaberite `main` i folder `/ (root)`.
-3. Posle minut-dva sajt je na `https://<korisnik>.github.io/<repo>/`.
-
-## Stranice
-Sve je u `index.html`; stranice se otvaraju preko adresa:
-`#/` (početna) · `#/usluge` · `#/o-nama` · `#/zakazivanje` · `#/pitanja` · `#/kontakt`
+1. Napravite repozitorijum i ubacite sav sadržaj ovog foldera (`index.html` mora biti u korenu).
+2. **Settings → Pages → Source: Deploy from a branch** → `main` / `(root)`.
+3. Sajt je za minut-dva na `https://<korisnik>.github.io/<repo>/`.
 
 ## Fotografije
-Ubacite slike u `assets/foto/` sa ovim imenima — automatski se prikazuju:
-- `hero.jpg` — glavna fotografija (uspravna, 4:5)
-- `ordinacija.jpg` — početna, „O ordinaciji“ (5:4)
-- `doktorka.jpg` — portret, stranica O nama (4:5)
-- `galerija-1.jpg`, `galerija-2.jpg`, `galerija-3.jpg` — galerija (4:5)
+Ubacite slike u `assets/foto/` pod ovim imenima — prikazuju se automatski:
+- `hero.jpg` — glavna fotografija (uspravna)
+- `doktorka.jpg` — portret dr Anice Nikolić (uspravna)
+- `usluga-1.jpg` … `usluga-6.jpg` — usluge redom (položene, 16:10)
+- `zasto.jpg` — doktorka sa pacijentom (uspravna)
+- `rad-1-pre.jpg`, `rad-1-posle.jpg` … `rad-3-pre.jpg`, `rad-3-posle.jpg` — pre/posle (4:3)
 
-## Forme (zakazivanje i kontakt)
-Da bi zahtevi stizali na e-mail: napravite besplatan formular na formspree.io,
-pa u `script.js` upišite njegov URL u `FORM_ENDPOINT`.
+## Recenzije
+U `index.html`, sekcija `RECENZIJE`: zamenite „Dodajte recenziju pacijenta“ tekstom recenzije,
+„Ime pacijenta“ imenom, a „?“ prvim slovom imena. Uklonite klasu `review-empty`.
+
+## Kontakt forma
+Napravite besplatan formular na formspree.io i njegov URL upišite u `script.js` kao `FORM_ENDPOINT`.
